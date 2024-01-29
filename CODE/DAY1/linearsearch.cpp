@@ -7,8 +7,7 @@ bool find_linear(int array[], int N, int key) {
     bool flag = false;
     for (int i = 0; i < N; i++) {
         if (array[i] == key) {
-            flag = true; // set flag to true when key is found
-            cout << "Found" << endl;
+            flag = true; 
             break;
         }
     }
