@@ -4,11 +4,11 @@ const int MOD=1e9+7;
 const long long INF = LLONG_MAX / 2;
 
 int square_root(int N){
-        int start=0;
-        int end=N;
-        int answer=-1;
+        long long start=0;
+        long long end=N;
+        long long answer=-1;
         while(start<=end){
-                int mid=start+(end-start)/2;
+                long long mid=start+(end-start)/2;
                 if(mid*mid>N){
                         end=mid-1;
                 }
