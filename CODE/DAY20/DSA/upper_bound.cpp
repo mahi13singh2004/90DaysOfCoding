@@ -1,4 +1,4 @@
-int upperBound(vector<int>&array, int X, int N){
+int UpperBound(vector<int>&array, int X, int N){
 	int answer=N;
 	int start=0;
 	int end=N;
