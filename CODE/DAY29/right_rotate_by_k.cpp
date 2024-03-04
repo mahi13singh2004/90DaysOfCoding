@@ -5,17 +5,17 @@ const long long INF = LLONG_MAX / 2;
 #define int long long
 
 void right_rotate(vector<int>array, int N, int D){
-    D=D%N;
-    vector<int>empty(D);
-    for(int i=N-D; i<N; i++){
-        empty[i-(N-D)]=array[i];
+    k=k%N;
+    vector<int>empty(k);
+    for(int i=N-k; i<N; i++){
+        empty[i-(N-k)]=array[i];
     }
 
-    for(int i=D; i>=0; i--){
-        array[i+D]=array[i];
+    for(int i=k; i>=0; i--){
+        array[i+k]=array[i];
     }
 
-    for(int i=0; i<D; i++){
+    for(int i=0; i<k; i++){
         array[i]=empty[i];
     }
 
@@ -34,8 +34,8 @@ void solve(){
         cin>>array[i];
     }
 
-    int D;
-    cin>>D;
+    int k;
+    cin>>k;
 
     right_rotate(array,N,D);
 }
